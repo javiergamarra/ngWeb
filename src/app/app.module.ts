@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { NglModule } from 'ng-lightning/ng-lightning';
 
+
 @NgModule({
   declarations: [
     AppComponent,
