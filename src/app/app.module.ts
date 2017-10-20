@@ -12,7 +12,7 @@ import { MenuComponent } from './menu/menu.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
     MenuComponent,
   ],
   imports: [
