@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BsDropdownModule } from 'ngx-bootstrap';
 import {FormsModule} from '@angular/forms';
+import {MatMenuModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -14,8 +14,8 @@ import {FormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    BsDropdownModule.forRoot(),
-    FormsModule
+    FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
