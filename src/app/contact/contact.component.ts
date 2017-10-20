@@ -12,4 +12,19 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  opened: boolean = false;
+  size: string;
+
+  noHeader: boolean = false;
+  noFooter: boolean = false;
+  directional: boolean = false;
+
+  open(size?: string) {
+    this.size = size;
+    this.opened = !this.opened;
+  }
+
+  cancel() {
+    this.opened = false;
+  }
 }

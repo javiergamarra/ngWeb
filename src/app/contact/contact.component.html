@@ -1,3 +1,21 @@
-<p>
-  contact works!
-</p>
+<button type="button" nglButton="neutral" (click)="open()">CONTACT</button>
+
+<ngl-modal [header]="noHeader ? '' : 'Contact us'" [(open)]="opened" [size]="size" [directional]="directional">
+  <div body>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      Name:
+      <input name="first" ngModel required #first="ngModel">
+      <br> Email:
+      <input name="email" ngModel required>
+      <br> Phone:
+      <input name="phone" ngModel>
+      <br>
+      <br>
+      <textarea name="comment" form="usrform"></textarea>
+    </form>
+  </div>
+  <ng-template ngl-modal-footer *ngIf="!noFooter">
+    <button class="slds-button slds-button--neutral" (click)="cancel()">Cancel</button>
+    <button class="slds-button slds-button--brand">Send</button>
+  </ng-template>
+</ngl-modal>
