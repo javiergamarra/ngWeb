@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material';
 import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
-import { RUTAS_APP } from './app.routing';
+import { APP_ROUTES } from './app.routing';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { RUTAS_APP } from './app.routing';
     BrowserModule,
     FormsModule,
     MatMenuModule,
-    RUTAS_APP
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]

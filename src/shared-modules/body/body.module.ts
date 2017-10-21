@@ -9,7 +9,8 @@ import { BODY_ROUTES } from './body.routing'
     BODY_ROUTES
   ],
   declarations: [BodyComponent],
-  entryComponents:[BodyComponent],
+  entryComponents: [BodyComponent],
   exports: [BodyComponent]
 })
-export class BodyModule { }
+export class BodyModule {
+}

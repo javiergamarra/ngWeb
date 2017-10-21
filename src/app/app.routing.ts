@@ -6,4 +6,4 @@ export const routes: Routes = [
   {path: 'contact-us', loadChildren: '../shared-modules/contact-us/contact-us.module#ContactUsModule'},
   {path: '**', redirectTo: 'index'}
 ];
-export const RUTAS_APP = RouterModule.forRoot(routes);
+export const APP_ROUTES = RouterModule.forRoot(routes);
