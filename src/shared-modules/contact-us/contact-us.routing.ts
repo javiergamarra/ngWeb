@@ -9,7 +9,7 @@ import { ContactUsComponent } from './contact-us.component'
 export const routes: Routes = [
         // { path: '', redirectTo: 'index', pathMatch: 'full' },
         //{ path: 'index', component: AppComponent},
-        { path: '/', component:ContactUsComponent },
+        { path: '', component:ContactUsComponent },
         // { path: 'contact-us', loadChildren: '../shared-modules/contact-us/contact-us.module#ContactUsModule' },
         //{ path:'**', redirectTo: 'index'}
 ];
