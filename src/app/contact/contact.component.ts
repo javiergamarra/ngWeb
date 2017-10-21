@@ -7,10 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   opened: boolean = false;
   size: string;
@@ -18,6 +14,11 @@ export class ContactComponent implements OnInit {
   noHeader: boolean = false;
   noFooter: boolean = false;
   directional: boolean = false;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
   open(size?: string) {
     this.size = size;
