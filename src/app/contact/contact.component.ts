@@ -7,17 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+
+  opened: boolean;
+  size: string;
+
+  noHeader: boolean;
+  noFooter: boolean;
+  directional: boolean;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
-
-  opened: boolean = false;
-  size: string;
-
-  noHeader: boolean = false;
-  noFooter: boolean = false;
-  directional: boolean = false;
 
   open(size?: string) {
     this.size = size;
