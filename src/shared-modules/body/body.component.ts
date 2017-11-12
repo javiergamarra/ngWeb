@@ -8,20 +8,16 @@ import { ServiceGithubService } from '../service-github/service-github.service';
 })
 export class BodyComponent implements OnInit {
 
-  constructor(private gs:ServiceGithubService) { }
+  constructor(private gs: ServiceGithubService) {
+  }
 
   ngOnInit() {
-    let proj = this.gs.getUsers();
-    
-    proj.subscribe(
-      resp => {
-        debugger;
-      },
-      err => {
-        debugger;
-      }
+    const usersOfAProject = this.gs.getUsers();
+
+    usersOfAProject.subscribe(
+      resp => console.log(resp),
+      err => console.log(err)
     )
-    //this.gs.getUsers();
   }
 
 }
